@@ -38,7 +38,8 @@ That's it! The package is now ready to use in your SwiftUI project.
 
 ## Screenshot
 ![Screenshot](Images/PersonAvatarGradient.png)
-Package include only AvatarView not more like text on screenshot
+
+- Package include only AvatarView not more like text on screenshot
 ## 🧩 Usage
 
 ```swift
