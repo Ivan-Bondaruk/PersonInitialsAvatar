@@ -1,17 +1,21 @@
-// The Swift Programming Language
-// https://docs.swift.org/swift-book
+//
+//  SwiftUIView.swift
+//  PersonInitialsAvatar
+//
+//  Created by Ivan Bondaruk on 15/06/2025.
+//
 
 import SwiftUI
 
-public struct PersonInitialsAvatarView: View {
+public struct ProfessionalPersonInitialAvatarView: View {
     let fullName: String
     let diameter: CGFloat
-    let backgroundColor: Color
+    let gradientColors: [Color]
     
-    public init(fullName: String, diameter: CGFloat, backgroundColor: Color = .blue) {
+    public init(fullName: String, diameter: CGFloat, gradientColors: [Color] = [.pink, .purple]) {
         self.fullName = fullName
         self.diameter = diameter
-        self.backgroundColor = backgroundColor
+        self.gradientColors = gradientColors
     }
 
     private var initials: String {
@@ -23,6 +27,14 @@ public struct PersonInitialsAvatarView: View {
             .joined()
             .uppercased()
     }
+    
+    public var bgGradient: LinearGradient {
+        LinearGradient(
+            colors: gradientColors,
+            startPoint: .leading,
+            endPoint: .trailing
+        )
+    }
 
     public var body: some View {
         Text(initials)
@@ -30,11 +42,11 @@ public struct PersonInitialsAvatarView: View {
             .foregroundColor(.white)
             .frame(width: diameter, height: diameter)
             .background(
-                Circle().fill(backgroundColor)
+                Circle().fill(bgGradient)
             )
     }
 }
 
 #Preview {
-    PersonInitialsAvatarView(fullName: "Ivan Bondaruk", diameter: 100)
+    ProfessionalPersonInitialAvatarView(fullName: "Ivan Bondaruk", diameter: 100)
 }
