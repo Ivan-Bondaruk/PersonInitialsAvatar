@@ -37,7 +37,7 @@ That's it! The package is now ready to use in your SwiftUI project.
 - SwiftUI framework
 
 ## Screenshot
-[Screenshot](Images/PersonAvatarGradient.png)
+![Screenshot](Images/PersonAvatarGradient.png)
 
 ## 🧩 Usage
 
