@@ -23,7 +23,7 @@ You can add this package directly through **Xcode**:
 
 1. Open your project in Xcode.
 2. Go to **File > Add Packages...**
-3. Enter the URL of the repository: [https://github.com/Ivan-Bondaruk/ProfessionalCard](https://github.com/Ivan-Bondaruk/PersonInitialsAvatar)
+3. Enter the URL of the repository: [https://github.com/Ivan-Bondaruk/PersonInitialsAvatar]()
 4. Select version `1.0.2` or **Up to Next Major**.
 5. Click **Add Package**.
 
